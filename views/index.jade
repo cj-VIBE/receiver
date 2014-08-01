@@ -1,0 +1,44 @@
+extend layout
+block content
+  .row
+    .col-md-3(data-sensor="weather")
+      h3 Weather
+      section
+        strong Temperature
+        p
+          span(data-reading="temperature")
+          |  ºC
+
+      section
+        strong Humidity
+        p
+          span(data-reading='humidity')
+          |  %
+
+    .col-md-3(data-sensor="airQuality")
+      h3 Air Quality
+      section
+        strong Carbon Monoxide
+        p
+          span(data-reading="co")
+          |  ppm
+
+    .col-md-3(data-sensor="sound")
+      h3 Sound
+      section
+        strong Level
+        p
+          span(data-reading="level")
+          |  db
+
+      section
+        strong Frequency
+        p
+          span(data-reading='frequency')
+          |  Hz
+
+      section
+        strong Beats per Minute
+        p
+          span(data-reading='bpm')
+          |  bpm

@@ -1,0 +1,24 @@
+doctype
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .container
+      header
+        h1 VIBE Receiver
+        .row
+          .col-md-3
+            .form-group
+              label(for="vibe-id") VIBE ID
+              input(type='text', class="form-control" id="vibe-id", data-info='id', value='dev-vibe')
+
+
+      section.content
+        block content
+
+    script(src='/javascripts/jquery-2.1.1.min.js')
+    script(src='/javascripts/bootstrap.min.js')
+    script(src='/javascripts/main.js')
